@@ -88,6 +88,14 @@ EasierLogger.Error(
 
 EasierLogger.Trace("Any string content");
 ```
+## Releases
+---
+| Version |  Notes | 
+| ----- |  ----- | 
+| 1.0 |  Preview | 
+| 1.0.1 |  First production version | 
+| 1.0.2 |  Default directory to save log files at "C:\temp\EasierLog" | 
+
 Package Info
 ---
 | Package |  Version | Popularity |
@@ -96,3 +104,4 @@ Package Info
 
 ## Give a Star! :star:
 If you liked the project or if EasierLog helped you, give a star 😉
+
