@@ -6,7 +6,7 @@
 
 What is the EasierLog?
 =====================
-A simple and asynchronous tool developed with .NET Standardt 2.0 to facilitate logging in your application. Save your logs to individual files per day or to your favorite database.
+A simple and asynchronous tool developed with .NET Standard 2.0 to facilitate logging in your application. Save your logs to individual files per day or to your favorite database.
 
 For more information about .NET supported versions: https://docs.microsoft.com/en-us/dotnet/standard/net-standard
 
