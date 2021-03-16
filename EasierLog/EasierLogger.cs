@@ -65,13 +65,16 @@ namespace EasierLog
         {
             Task result = null;
 
-            if (!Settings.ConfigLoaded)            
+            if (!Settings.ConfigLoaded)
+            {
                 Settings.LoadAppSettings();
+            }
 
             if (Settings.ConfigLoaded)
             {
                 switch (Settings.DestinationLog)
                 {
+                    default:
                     case LogDestination.File:
                         {
                             result = Task.Run(() => FileLog.Instance.Log(system, module, version, user, info, infoDescription, logLevel));
@@ -100,7 +103,7 @@ namespace EasierLog
                                     },
                                     TaskContinuationOptions.OnlyOnFaulted);
                                 }
-                                else
+                                else                                
                                     ConsoleHelper.Write(task.Exception.InnerException, "Error trying to save log in database");
                             },
                             TaskContinuationOptions.OnlyOnFaulted);

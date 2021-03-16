@@ -29,12 +29,12 @@ namespace EasierLog
 
         private async Task Save(string system, string module, string version, string user, object info, string infoDescription, LogLevel level)
         {
-            await FileHelper.DeletePastFilesAccorddingSettings();
-
-            await Task.Run(() =>
+            await Task.Run(async () =>
             {
                 if (FileHelper.CreateDirectoryIfNotExists(Settings.DirectoryToStoreLog))
                 {
+                    await FileHelper.DeletePastFilesAccorddingSettings();
+
                     using (StreamWriter streamWriter = File.AppendText(_fileOfDay))
                     {
                         using (XmlTextWriter xmlWriter = new XmlTextWriter(streamWriter))

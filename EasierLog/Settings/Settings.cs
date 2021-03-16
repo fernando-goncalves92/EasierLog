@@ -33,6 +33,9 @@ namespace EasierLog
                     DatabaseTableToStoreLog = easyLoggerSettings["databaseTableToStoreLog"];                    
                     DirectoryToStoreLog = easyLoggerSettings["directoryToStoreLog"];
 
+                    if ((DestinationLog == LogDestination.File) && string.IsNullOrEmpty(DirectoryToStoreLog))
+                        DirectoryToStoreLog = @"C:\temp\EasierLog";
+
                     if (int.TryParse(easyLoggerSettings["daysToKeepLogFiles"], out var daysToKeepLogFiles))
                         DaysToKeepLogFiles = daysToKeepLogFiles;
                     
