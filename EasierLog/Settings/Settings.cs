@@ -4,7 +4,7 @@ using System.Collections.Specialized;
 
 namespace EasierLog
 {
-    internal class Settings 
+    internal static class Settings 
     {          
         public static LogDestination DestinationLog { get; private set; }
         public static DatabaseConventionPattern DatabaseConventionPatternForTableAndColumns { get; private set; }
