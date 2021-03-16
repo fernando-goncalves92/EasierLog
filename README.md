@@ -54,9 +54,40 @@ After install EasierLog you need to add this to your app.confg:
 | databaseConventionPatternForTableAndColumns | UpperCase, LowerCase, UpperCamelCase | The convention pattern for creating columns in your database | UPPERCASE, lowercase, UpperCamelCase |
 | connectionString | The connection string using OLEDB API | The connection string from your database | - |
 | directoryToStoreLog | An existing directory | The directory that will store your log information | C:\MyApplicationLogs |
-| daysToKeepLogFiles | A value greater than zero | For how many days the log will be kept | - |
-| saveLogFileInCaseOfDatabaseLogFail | true, false | Save log file in case of database fail (zero to never clean) | - |
+| daysToKeepLogFiles | A value greater than zero | For how many days the log will be kept (zero to never clean) | - |
+| saveLogFileInCaseOfDatabaseLogFail | true, false | Save log file in case of database fail | - |
 
+Using it in your app:
+
+```csharp
+using EasierLog;
+
+EasierLogger.Info(
+  "My application name", 
+  "My application module", 
+  "My application version", 
+  "User who triggered the log",
+  string.Empty, 
+  "Sales order completed successfully!");
+  
+EasierLogger.Warning(
+  "My application name", 
+  "My application module", 
+  "My application version", 
+  "User who triggered the log", 
+  string.Empty, 
+  "Sales order canceled by user");
+
+EasierLogger.Error(
+  "My application name", 
+  "My application module", 
+  "My application version", 
+  "User who triggered the log", 
+  exception, 
+  "Error trying to create sales order");
+
+EasierLogger.Trace("Any string content");
+```
 Package Info
 ---
 | Package |  Version | Popularity |
