@@ -22,12 +22,12 @@ Supported DBMS:
 All connections to database are made using OLEDB API.
 
 ## Get Started
-Install using the Nuget package manager or the `dotnet` CLI.
+Install using the Nuget package manager console or the `dotnet` CLI.
 
 ```
-dotnet add package EasierLog
+Install-Package EasierLog 
 
-Install-Package EasierLog
+dotnet add package EasierLog
 ```
 
 After install EasierLog you need to add this to your app.confg:
