@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+
+    <PackageId>EasierLog</PackageId>
+    <Version>1.0.0</Version>
+    <License>MIT</License>
+    <Authors>Fernando Gonçalves</Authors>
+    <Company></Company>
+    <PackageDescription>A simple and asynchronous tool developed with .NET Standard 2.0 to facilitate logging in your application. Save your logs to individual files per day or to your favorite database.</PackageDescription>
+    <Description>A simple and asynchronous tool developed with .NET Standard 2.0 to facilitate logging in your application. Save your logs to individual files per day or to your favorite database.</Description>
+    <RepositoryUrl>https://github.com/fernando-goncalves92/Easierlog</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/fernando-goncalves92/Easierlog</PackageProjectUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageTags>EasierLog,Log,Easylog,LogSimple, AsynchronousLog</PackageTags>
+    <Title>EasierLog</Title>
+    <Summary>A simple and asynchronous tool developed with .NET Standard 2.0 to facilitate logging in your application. Save your logs to individual files per day or to your favorite database.</Summary>
+    
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile></DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="5.0.0" />
+    <PackageReference Include="System.Data.OleDb" Version="5.0.0" />
+  </ItemGroup>
+
+</Project>
