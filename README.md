@@ -2,7 +2,7 @@
 [![Build Status](https://img.shields.io/appveyor/ci/thiagoloureiro/netcore-jwt-integrator-extension/master.svg)](https://ci.appveyor.com/project/thiagoloureiro/netcore-jwt-integrator-extension)
 ![Net Standard Version](https://img.shields.io/badge/.net%20standard-2.0-blueviolet)
 ![GitHub issues](https://img.shields.io/github/issues/fernando-goncalves92/EasierLog)
-[![License](http://img.shields.io/github/license/NetDevPack/NetDevPack.svg)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 What is the EasierLog?
 =====================
