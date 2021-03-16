@@ -17,7 +17,7 @@ Supported DBMS:
 | SQL Server | Unknown | Development Environment | https://www.connectionstrings.com/ole-db-driver-for-sql-server/standard-security/ | All versions that accept "object_id()" function are supported | 
 | PostgreSQL | 9.4 | https://www.db-fiddle.com/ | https://www.connectionstrings.com/pgoledb/standard/ | All versions that accept "create table if not exists" are supported | 
 | MySQL | 5.5 | https://www.db-fiddle.com/ | https://www.connectionstrings.com/mysql-oledb-mysqlprov/standard/ | All versions that accept "create table if not exists" are supported | 
-| Oracle | Unknown | https://dbfiddle.uk/ | https://www.connectionstrings.com/oracle-provider-for-ole-db-oraoledb/standard-security/ | Attempts to create a table without checking if it exists | 
+| Oracle | 12c | https://dbfiddle.uk/ | https://www.connectionstrings.com/oracle-provider-for-ole-db-oraoledb/standard-security/ | All versions that accept auto increment column; Attempts to create a table without checking if it exists | 
 
 All connections to database are made using OLEDB API.
 
