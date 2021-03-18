@@ -46,8 +46,6 @@ namespace EasierLog
         /// <returns></returns>
         public static Task Error(string system, string module, string version, string user, object info, string infoDescription)
         {
-            Warning(system, module, version, user, null, infoDescription);
-
             return Log(system, module, version, user, info, infoDescription, LogLevel.Error);
         }
 

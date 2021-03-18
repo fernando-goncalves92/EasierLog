@@ -4,18 +4,18 @@
     <TargetFramework>netstandard2.0</TargetFramework>
 
     <PackageId>EasierLog</PackageId>
-    <Version>1.0.2</Version>
+    <Version>1.0.4</Version>
     <License>MIT</License>
     <Authors>Fernando Gonçalves</Authors>
     <Company></Company>
-    <PackageDescription>A simple and asynchronous tool developed with .NET Standard 2.0 to facilitate logging in your application. Save your logs to individual files per day or to your favorite database.</PackageDescription>
-    <Description>A simple and asynchronous tool developed with .NET Standard 2.0 to facilitate logging in your application. Save your logs to individual files per day or to your favorite database.</Description>
+    <PackageDescription>Save your logs to individual files per day or to your favorite database easily.</PackageDescription>
+    <Description>Save your logs to individual files per day or to your favorite database easily.</Description>
     <RepositoryUrl>https://github.com/fernando-goncalves92/Easierlog</RepositoryUrl>
     <PackageProjectUrl>https://github.com/fernando-goncalves92/Easierlog</PackageProjectUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageTags>EasierLog,Log,Easylog,LogSimple, AsynchronousLog</PackageTags>
+    <PackageTags>EasierLog, Log, Easylog, LogSimple, AsynchronousLog, EffortlessLog, DbLog, DatabaseLog, LogDb, LogDatabase, LogAndClean</PackageTags>
     <Title>EasierLog</Title>
-    <Summary>A simple and asynchronous tool developed with .NET Standard 2.0 to facilitate logging in your application. Save your logs to individual files per day or to your favorite database.</Summary>
+    <Summary>Save your logs to individual files per day or to your favorite database easily.</Summary>
     
   </PropertyGroup>
 
