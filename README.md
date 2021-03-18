@@ -95,6 +95,7 @@ EasierLogger.Trace("Any string content");
 | 1.0 |  Preview | 
 | 1.0.1 |  First production version | 
 | 1.0.2 |  Default directory to save log files at "C:\temp\EasierLog" | 
+| 1.0.3 |  Fixed error log was triggering Warning log too | 
 
 Package Info
 ---
