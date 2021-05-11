@@ -11,6 +11,7 @@ namespace EasierLog
         private const string OleDbSQLServer2 = "SQLOLEDB";
         private const string OleDbMySQL = "MySQLProv";
         private const string OleDbPostgre = "PostgreSQL OLE DB Provider";
+        private const string MongoDB = "mongodb://";
 
         private readonly IDbms _databaseLog = null;
 
@@ -29,19 +30,18 @@ namespace EasierLog
 
         public DbLog()
         {
-            if (Settings.ConnectionString.Contains(ConnectionStringPrefix))
-            {
-                if (Settings.ConnectionString.Contains(OleDbSQLServer1) || Settings.ConnectionString.Contains(OleDbSQLServer2))
-                    _databaseLog = new SQLServer();
-                else if (Settings.ConnectionString.Contains(OleDbOracle1) || Settings.ConnectionString.Contains(OleDbOracle2))
-                    _databaseLog = new Oracle();
-                else if (Settings.ConnectionString.Contains(OleDbMySQL))
-                    _databaseLog = new MySQL();
-                else if (Settings.ConnectionString.Contains(OleDbPostgre))
-                    _databaseLog = new Postgre();
-            }
+            if (Settings.ConnectionString.Contains(OleDbSQLServer1) || Settings.ConnectionString.Contains(OleDbSQLServer2))
+                _databaseLog = new SQLServer();
+            else if (Settings.ConnectionString.Contains(OleDbOracle1) || Settings.ConnectionString.Contains(OleDbOracle2))
+                _databaseLog = new Oracle();
+            else if (Settings.ConnectionString.Contains(OleDbMySQL))
+                _databaseLog = new MySQL();
+            else if (Settings.ConnectionString.Contains(OleDbPostgre))
+                _databaseLog = new Postgre();
+            else if (Settings.ConnectionString.Contains(MongoDB))
+                _databaseLog = new MongoDB();
             else
-                ConsoleHelper.Write("Connection string format invalid! Use OLEDB API!");
+                ConsoleHelper.Write("Connection string format invalid! Check out github project instructions: https://github.com/fernando-goncalves92/EasierLog");
         }
 
         public async Task Log(string system, string module, string version, string user, object info, string infoDescription, LogLevel logLevel)
