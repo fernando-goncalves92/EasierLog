@@ -22,9 +22,9 @@ namespace EasierLog
             }            
         }
 
-        public async Task Log(string system, string module, string version, string user, object info, string infoDescription, LogLevel logLevel)
+        public async Task Log(string system, string module, string version, string user, object info, string infoDescription, LogLevel level)
         {
-            await Save(system, module, version, user, info, infoDescription, logLevel);
+            await Save(system, module, version, user, info, infoDescription, level);
         }
 
         private async Task Save(string system, string module, string version, string user, object info, string infoDescription, LogLevel level)
@@ -40,7 +40,7 @@ namespace EasierLog
                         using (XmlTextWriter xmlWriter = new XmlTextWriter(streamWriter))
                         {
                             xmlWriter.WriteStartElement("Log");
-                            xmlWriter.WriteElementString("Type", level.ToString());
+                            xmlWriter.WriteElementString("Level", level.ToString());
                             xmlWriter.WriteElementString("Date", DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"));
                             xmlWriter.WriteElementString("System", system);
                             xmlWriter.WriteElementString("Module", module);
