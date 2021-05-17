@@ -18,6 +18,7 @@ Supported DBMS:
 | PostgreSQL | 9.4 | https://www.db-fiddle.com/ | https://www.connectionstrings.com/pgoledb/standard/ | All versions that accept "create table if not exists" are supported | 
 | MySQL | 5.5 | https://www.db-fiddle.com/ | https://www.connectionstrings.com/mysql-oledb-mysqlprov/standard/ | All versions that accept "create table if not exists" are supported | 
 | Oracle | 12c | https://dbfiddle.uk/ | https://www.connectionstrings.com/oracle-provider-for-ole-db-oraoledb/standard-security/ | All versions that accept auto increment column; Attempts to create a table without checking if it exists | 
+| MongoDB | Unknown | Development Environment | mongodb://localhost:27017/MyDB | - | 
 
 All connections to database are made using OLEDB API.
 
@@ -97,6 +98,7 @@ EasierLogger.Trace("Any string content");
 | 1.0.2 |  Default directory to save log files at "C:\temp\EasierLog" | 
 | 1.0.3 |  Fixed error log triggering warning log (this build is without features and fixes from 1.0.2 version, use 1.0.4) | 
 | 1.0.4 |  Fixed error log triggering warning log | 
+| 1.0.5 |  MongoDB Support | 
 
 Package Info
 ---
