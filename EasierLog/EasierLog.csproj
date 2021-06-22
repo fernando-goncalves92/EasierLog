@@ -4,7 +4,7 @@
     <TargetFramework>netstandard2.0</TargetFramework>
 
     <PackageId>EasierLog</PackageId>
-    <Version>1.0.5</Version>
+    <Version>1.0.6</Version>
     <License>MIT</License>
     <Authors>Fernando Gonçalves</Authors>
     <Company></Company>

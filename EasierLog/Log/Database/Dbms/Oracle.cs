@@ -40,7 +40,7 @@ namespace EasierLog
 
                         _tableCreated = true;
                     }
-                    catch { /* If table already exists will be caught here */ }
+                    catch { _tableCreated = true; /* If table already exists will be caught here */ }
                 }
             }
         }
