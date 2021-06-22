@@ -99,6 +99,7 @@ EasierLogger.Trace("Any string content");
 | 1.0.3 |  Fixed error log triggering warning log (this build is without features and fixes from 1.0.2 version, use 1.0.4) | 
 | 1.0.4 |  Fixed error log triggering warning log | 
 | 1.0.5 |  MongoDB Support | 
+| 1.0.6 |  Fixed Oracle DBMS not inserting records after first insert | 
 
 Package Info
 ---
